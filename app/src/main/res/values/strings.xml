@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyToDo</string>
+    <string name="save">Save</string>
+    <string name="Add_Task">Enter new task</string>
+    <string name="DOIT">Tasks To Be Done</string>
+</resources>

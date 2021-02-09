@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/newTaskText"
-        android:text="Important Task">
+        android:text="Important Task"
+        android:layout_marginTop="6dp">
 
     </CheckBox>
 

@@ -10,8 +10,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.style.StrikethroughSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -29,6 +32,9 @@ import java.util.ListIterator;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements DialogCloseListener{
+
+
+
 
     private DatabaseHandler db;
 
@@ -58,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
 
         fab = findViewById(R.id.fab);
 
+
+
+
         taskList = db.getAllTasks();
         Collections.reverse(taskList);
 
@@ -78,4 +87,5 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
         tasksAdapter.setTasks(taskList);
         tasksAdapter.notifyDataSetChanged();
     }
+
 }

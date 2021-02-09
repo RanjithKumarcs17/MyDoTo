@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.TextView;
 
 import com.example.doit.Model.ToDoModel;
 
@@ -12,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
+
+
 
     private static final int VERSION = 1;
     private static final String NAME = "toDoListDatabase";
@@ -65,6 +68,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                         task.setId(cur.getInt(cur.getColumnIndex(ID)));
                         task.setTask(cur.getString(cur.getColumnIndex(TASK)));
                         task.setStatus(cur.getInt(cur.getColumnIndex(STATUS)));
+
                         taskList.add(task);
                     }
                     while(cur.moveToNext());

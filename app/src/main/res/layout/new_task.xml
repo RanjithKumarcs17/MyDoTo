@@ -11,6 +11,16 @@
     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
 
     />
+
+    <CheckBox
+        android:id="@+id/Check_box_important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskText"
+        android:text="Important Task">
+
+    </CheckBox>
+
     <Button
         android:id="@+id/newTaskButton"
         android:layout_width="wrap_content"
